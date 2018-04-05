@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.avia.controller.Passenger.RegistrationController">
+   <children>
+      <AnchorPane prefHeight="69.0" prefWidth="470.0">
+         <children>
+            <Label layoutX="179.0" layoutY="24.0" text="Регистрация" textAlignment="CENTER" textFill="#888888" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="35.0" prefWidth="500.0">
+         <children>
+            <Label layoutX="46.0" layoutY="43.0" text="Фамилия" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="17.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="surnameInput" layoutX="224.0" layoutY="39.0" prefHeight="25.0" prefWidth="203.0" promptText="Ivanov" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="17.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="37.0" prefWidth="500.0">
+         <children>
+            <Label layoutX="46.0" layoutY="43.0" text="Имя" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="17.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="nameInput" layoutX="224.0" layoutY="39.0" promptText="Ivan" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="17.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="39.0" prefWidth="500.0">
+         <children>
+            <Label layoutX="46.0" layoutY="43.0" text="Отчество" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="17.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="middleNameInput" layoutX="224.0" layoutY="39.0" promptText="Ivanovich" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="17.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="41.0" prefWidth="467.0">
+         <children>
+            <Label layoutX="46.0" layoutY="43.0" text="Паспортные данные" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="17.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="documentNumberInput" layoutX="224.0" layoutY="39.0" promptText="8256" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="17.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="36.0" prefWidth="467.0">
+         <children>
+            <Label layoutX="46.0" layoutY="43.0" text="Email" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="17.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="emailInput" layoutX="224.0" layoutY="39.0" promptText="ivanov@mail.ru" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="17.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="15.0" prefWidth="467.0">
+         <children>
+            <Label layoutX="46.0" layoutY="43.0" text="Номер телефона" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="17.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="numberInput" layoutX="224.0" layoutY="39.0" promptText="8 999 17 56" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="17.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="92.0" prefWidth="470.0">
+         <children>
+            <Button defaultButton="true" layoutX="73.0" layoutY="36.0" mnemonicParsing="false" onAction="#actionOk" prefHeight="30.0" prefWidth="60.0" text="ОК" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="30.0" />
+            <Button cancelButton="true" layoutX="270.0" layoutY="39.0" mnemonicParsing="false" onAction="#actionClose" prefHeight="30.0" prefWidth="80.0" text="Отмена" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="235.0" AnchorPane.topAnchor="30.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

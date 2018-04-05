@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.transport.controller.transport.PopupTransportController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="451.0">
+         <children>
+            <Label text="Номер рейса" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="typeInput" layoutX="127.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="35.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="25.0" prefWidth="500.0">
+         <children>
+            <Label text="Самолет" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="262.0" layoutY="2.0" prefHeight="25.0" prefWidth="198.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="29.0" prefWidth="500.0">
+         <children>
+            <Label text="Дата вылета" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="262.0" layoutY="20.0" prefHeight="25.0" prefWidth="198.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="24.0" prefWidth="500.0">
+         <children>
+            <Label text="Дата прилета" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="262.0" layoutY="20.0" prefHeight="25.0" prefWidth="198.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="14.0" prefWidth="500.0">
+         <children>
+            <Label text="Пункт отправления" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="262.0" layoutY="18.0" prefHeight="25.0" prefWidth="198.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="20.0" prefWidth="500.0">
+         <children>
+            <Label text="Пункт назначения" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="262.0" layoutY="20.0" prefHeight="25.0" prefWidth="198.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="86.0" prefWidth="451.0">
+         <children>
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#actionOk" prefHeight="30.0" prefWidth="75.0" text="ОК" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="25.0" />
+            <Button cancelButton="true" layoutX="52.0" mnemonicParsing="false" onAction="#actionClose" prefHeight="30.0" prefWidth="75.0" text="Отмена" AnchorPane.leftAnchor="262.0" AnchorPane.topAnchor="25.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

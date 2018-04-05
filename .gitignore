@@ -1,0 +1,6 @@
+$ cat .gitignore
+
+/.idea
+Avia.iml
+/lib
+/out
